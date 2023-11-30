@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Colors EX</title>
+  <link rel="shortcut icon" href="icons8-bote-de-pintura-16.png" type="image/x-icon" />
+  <link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body>
+
+
+  <div id="logo">
+    <h1>Colors EX</h1>
+  </div>
+
+  <div id="content-container">
+    <div id="examples-container">
+    <a href="#" id="myBtn">Ejemplos de uso</a>
+    </div>
+    
+    <div id="palleteContainer"></div>
+    <button onclick="updatePallete()">Generar paleta</button>
+    <h3 id="description">
+      Es una herramienta esencial para diseñadores, artistas y cualquier persona
+      involucrada en la creación visual. Su importancia radica en su capacidad
+      para inspirar creatividad y facilitar la toma de decisiones en cuanto a la
+      paleta de colores.
+    </h3>
+  </div>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <iframe src="https://colorpalettes.net/page/2/" height="500" width="1080" title="Iframe Example"></iframe>
+    </div>
+
+  </div>
+  <script src="script.js" type="text/javascript" defer></script>
+  <script src="modal.js"></script>
+
+
+</body>
+
+</html>

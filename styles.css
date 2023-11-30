@@ -1,0 +1,142 @@
+
+body {
+    margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    position: relative;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    font-weight: bold;
+    padding-top: 20px;
+    background-image: url('clash.jpg'); /* Reemplaza 'tu_imagen.jpg' con la ruta de tu imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+
+}
+
+#logo {
+    position: absolute;
+    top: 20px;
+    left: 60px;
+    color: #fff; /* Color del texto */
+}
+
+#description {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    color: #fff;
+    border-radius: 8px;
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+#palleteContainer {
+    width: 320px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    overflow: hidden;
+
+}
+    
+
+.palleteItem {
+    transition: background-color .5s;
+} 
+
+.palleteItem span {
+    padding: 10px;
+    color: #fff;
+    display: inline-block;
+    min-width: 80px;
+}
+
+button {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    border-radius: 4px;
+    background: #000;
+}
+
+
+#content-container {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#examples-container {
+    margin-bottom: 20px;
+}
+
+#myBtn {
+    font-family: Georgia, serif;
+    text-decoration: none;
+    font-size: 16px;
+    color: #050505;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: #333;
+}
+
+
+/* MODAL EJEMPLO */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
